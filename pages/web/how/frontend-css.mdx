@@ -1,0 +1,77 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faJsSquare } from '@fortawesome/free-brands-svg-icons';
+
+# CSS
+
+Untuk memberikan desain pada html kita memerlukan CSS atau Cascading Style Sheet. CSS bisa dituliskan langsung di dalam file html, maupun dituliskan secara terpisah di dalam filenya sendiri, lalu di-import ke dalam dokumen html kita. Cara meng-import file CSS ke html adalah dengan memasukkan elemen `<link>` ke dalam elemen `<head>` di html. Contohnya adalah:
+
+![tag-link](/css/1.png)
+
+Di sini kita mengimport file eksternal bernama mycss.css yang berisi style kita. Untuk membuat style di dalam file html itu sendiri, terdapat dua cara. Yang pertama sudah kita lakukan sebelumnya, yaitu menuliskan style di tiap elemen. Cara yang lain adalah menuliskan di dalam elemen `<style></style>` yang diletakkan di dalam elemen `<head>`. Cara penulisan (syntax) yang digunakan sama baik dalam `<style>` maupun dalam file css. Contoh penulisan yang sama dengan yang kita tuliskan sebelumnya adalah:
+
+```css
+body {
+  background-color: pink;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+```
+
+Dilihat file html yang sebelumnya sudah dihapus atribut style di tiap elemennya:
+
+```html
+<html>
+<head>
+    <title>HTML Pertama</title>
+    <link rel="stylesheet" href="mycss.css">
+</head>
+<body>
+    <h1>Hello HTML</h1>
+    <p>Selamat datang di html. Ini adalah paragraf</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Kepala Tabel</th>
+                <th>Kepala Tabel</th>
+                <th>Kepala Tabel</th>
+                <th>Kepala Tabel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Isi tabel baris 1</td>
+                <td>Isi tabel baris 1</td>
+                <td>Isi tabel baris 1</td>
+                <td>Isi tabel baris 1</td>
+            </tr>
+            <tr>
+                <td>Isi tabel baris 2</td>
+                <td>Isi tabel baris 2</td>
+                <td>Isi tabel baris 2</td>
+                <td>Isi tabel baris 2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+```
+
+Namun tetap menghasilkan tampilan yang sama:
+
+![result](/css/4.png)
+
+Nah untuk menulis di css, terdapat beberapa hal yang perlu diketahui, yaitu selector, property, dan value. Perhatikan contoh berikut:
+
+![css-example](/css/5.png)
+
+Pada gambar di atas,
+
+- body dan table merupakan selector, artinya elemen yang akan diberi style
+- background-color, margin-left dan margin-right adalah property, artinya gaya apa yang akan kita ubah, dan terakhir
+- pink dan auto adalah value atau nilai yang kita berikan pada property.
+
+Cara membacanya seperti ini: pada elemen body, berikan warna pink pada background
+
+Selector ini selain bisa memilih elemen, bisa juga memilih class dan id. Ketiga jenis selector ini merupakan selector yang sederhana atau simple selector. Masih ada selector lain yang bisa kita gunakan dalam CSS. Untuk belajar CSS lebih lanjut, bisa membaca di sini: https://www.w3schools.com/css/default.asp

@@ -1,0 +1,157 @@
+# HTML
+
+## Introduction
+
+Kita mengakses web melalui browser. Karena itu, kita harus tau apa saja yang bisa ditampilkan oleh browser. Browser bisa menampilkan teks biasa, gambar, dan file HTML. Sebelum menuju ke HTML, pertama kita lihat dulu kenapa tidak menggunakan teks saja. Coba bayangkan membuka file teks menggunakan notepad.
+
+![image1](/html/1.png)
+
+Teks biasa tidak bisa diberi warna, dipercantik, tidak bisa menampilkan gambar dan video. Tentu tidak menarik dan berbeda sekali dengan internet jaman sekarang. Lalu bagaimana web seperti sekarang dibuat? Web dibuat menggunakan HTML. HTML adalah HyperText Markup Language. HTML merupakan bahasa markup yang saat ditampilkan oleh browser menjadi memiliki format tertentu. Hypertext adalah file teks yang bisa memiliki apa yang disebut link. Link kalau kita klik bisa mengarahkan kita ke tujuan lain. Seperti kalau kita melakukan google search lalu muncul hasilnya, kita bisa klik link tersebut menuju web tujuan. File markup adalah file yang bisa memiliki format tertentu setelah ditampilkan oleh alat yang mendukungnya. Kedengarannya ribet ya, mari kita lihat contoh file HTML.
+
+## Contoh HTML
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Pertama</title>
+  </head>
+  <body>
+    <h1>Hello HTML</h1>
+
+    <p>Selamat datang di html. Ini adalah paragraf</p>
+  </body>
+</html>
+```
+
+Kira-kira seperti itu file HTML. HTML terdiri dari apa yang disebut elemen.
+Elemen yang ada di situ:
+
+- `<title>HTML Pertama</title>`
+- `<h1>Hello HTML</h1>`
+- `<p>Selamat datang di html. Ini adalah paragraf</p>`
+
+Jika diperhatikan lebih lanjut, elemen memiliki awalan dan akhiran. Awalan dan akhiran itu yang disebut tags. Selain itu, ada juga tag doctype. Doctype merupakan deklarasi ke browser kalau file itu merupakan file html. Meskipun tidak semua browser memerlukannya, sebagai programmer kita harus memastikan dokumen kita terlihat sama di semua browser. Maka dari itu doctype merupakan keharusan dalam file html. Kemudian, terdapat tag html. Setiap dokumen html memerlukan satu tag html. Tidak boleh lebih dan tidak boleh kurang.
+Simpan file dengan nama dokumen.htm dan buka dengan browser.
+Mari kita lihat hasilnya
+
+![image3](/html/3.png)
+
+Terlihat yang ditampilkan sangat berbeda dengan apa yang kita tulis.
+
+- tag `<title>` menjadi judul halaman html yang kita buka
+- tag `<h1>` menjadi teks besar yang disebut header
+- tag `<p>` menjadi teks biasa yang disebut paragraf
+
+## Elemen Bersusun
+
+Kalau diperhatikan, elemen `<h1>` dan `<p>` yang muncul di halaman dituliskan dalam elemen `<body>`. `<body>` berisikan semua yang ingin kita tampilkan di halaman web. Selanjutnya, elemen `<title>` dituliskan di dalam elemen `<head>`. `<head>` berisi metadata, yaitu data pelengkap dan penjelas suatu dokumen html. `<title>` tidak memunculkan teks di halaman tersebut tetapi muncul sebagai judul tab browser yang sedang membuka file tersebut.
+
+Tag dalam html bisa dibuat bersusun, artinya kita bisa meletakkan suatu elemen di dalam elemen. Bingung? Kita lihat lagi gambar ini:
+
+![image4](/html/4.png)
+
+Dari gambar di atas, elemen `<html></html>` merupakan elemen utama yang membungkus semua elemen di dalamnya. Kita coba dengan contoh yang lebih jelas:
+
+```html
+<html>
+<head>
+    <title>HTML Pertama</title>
+</head>
+<body>
+    <h1>Hello HTML</h1>
+    <p>Selamat datang di html. Ini adalah paragraf</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Kepala Tabel</th>
+                <th>Kepala Tabel</th>
+                <th>Kepala Tabel</th>
+                <th>Kepala Tabel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Isi tabel baris 1</td>
+                <td>Isi tabel baris 1</td>
+                <td>Isi tabel baris 1</td>
+                <td>Isi tabel baris 1</td>
+            </tr>
+            <tr>
+                <td>Isi tabel baris 2</td>
+                <td>Isi tabel baris 2</td>
+                <td>Isi tabel baris 2</td>
+                <td>Isi tabel baris 2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+```
+Di sini diberikan jarak dari sisi kiri teks agar terlihat lebih jelas perbedaan susunannya. Terlihat elemen `<title>` menjorok ke kanan setelah `<head>`, itu karena `<title>` berada di dalam `<head>` atau elemen `<head>` membungkus elemen `<title>`. Kemudian di sini ada elemen `<table>` yang berisi elemen `<thead>` dan `<tbody>`. Elemen ini digunakan untuk membuat tabel dalam html. `<thead>` untuk membuat kepala tabel, sedangkan `<tbody>` untuk membuat isi tabel. Di dalam masing-masing `<thead>` dan `<tbody>` terdapat elemen `<tr>` yang menunjukkan baris. Untuk lebih jelasnya kita lihat hasilnya:
+
+![image6](/html/6.png)
+
+Di sini yang telah kita pelajari adalah:
+
+- HTML adalah standar file teks yang digunakan untuk membuat dokumen dalam web.
+- HTML terdiri dari elemen, tiap elemen terdiri dari tag yang memiliki awalan dan akhiran seperti: `<tag>`isi elemen`</tag>`
+- Perlu diingat, tidak semua elemen dalam HTML memiliki tag penutup.
+- Elemen dapat bersusun dan “membungkus" elemen lainnya.
+
+## Tags yang penting
+
+Nah, dalam blogging. ada beberapa tag yang penting untuk diketahui, yaitu:
+
+- `<title></title>` : bertujuan untuk memberi tahu pembaca apa judul dari dokumen kita secara keseluruhan.
+- `<meta>` : memberikan metadata atau informasi tambahan kepada browser atau mesin pencari (google misalnya) tentang data yang perlu diketahui. Elemen `<meta>` diletakkan di dalam elemen `<head></head>`
+- Heading tag (`<h1></h1>`; `<h2></h2>`; `<h3></h3>` dst sampai `<h6></h6>`): untuk menentukan judul dan subjudul yang ditampilkan. Hal ini berbeda dengan `<title></title>` karena title digunakan untuk memberikan judul pada satu halaman dokumen, sedangkan heading digunakan untuk memberikan judul yang ditampilkan dalam dokumen. Heading juga tidak mengubah judul tab browser, tidak seperti `<title>`.
+- `<a href="link ke web">`judul/anchor teks`</a>` : digunakan untuk membuat link yang dapat kita klik menuju website lain atau halaman web lain. Isi dari elemen `<a></a>` bisa berupa tulisan atau gambar atau elemen apapun yang ditampilkan, sedangkan dalam `href=""` berisi link yang ingin dituju.
+- `<img src="link atau lokasi gambar" alt="" />` merupakan elemen yang digunakan untuk menampilkan gambar. `<img />` merupakan salah satu elemen yang tidak memiliki tag penutup, diindikasikan dengan garis miring di akhir sebelum tanda “>". Lokasi gambar diletakkan dalam atribut `src=""` dan atribut `alt=""` berisikan teks penjelas gambar. Teks ini hanya ditampilkan saat gambar tidak berhasil dimuat di halaman web, tetapi bisa terbaca oleh mesin pencari karena mesin pencari tidak mengindeks gambar, hanya teks.
+- `<p></p>` : merupakan tag untuk elemen paragraf. Paragraf hanya berisi teks atau tulisan saja.
+
+Jika dilihat dari tadi, html kita sangat membosankan dan tidak memiliki desain apapun. Untuk mengubah desain, kita bisa gunakan atribut “style" di tiap elemen. Contohnya:
+Misalnya kita ingin mewarnai background menjadi pink dan memposisikan tabel di tengah-tengah secara horizontal, kita bisa mengubah kode kita menjadi seperti ini
+
+```html
+<html>
+<head>
+    <title>HTML Pertama</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background-color: pink;">
+    <h1>Hello HTML</h1>
+    <p>Selamat datang di html. Ini adalah paragraf</p>
+    <table style="margin-left: auto; margin-right: auto;">
+        <thead>
+            <tr>
+                <th>Kepala Tabel</th>
+                <th>Kepala Tabel</th>
+                <th>Kepala Tabel</th>
+                <th>Kepala Tabel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Isi tabel baris 1</td>
+                <td>Isi tabel baris 1</td>
+                <td>Isi tabel baris 1</td>
+                <td>Isi tabel baris 1</td>
+            </tr>
+            <tr>
+                <td>Isi tabel baris 2</td>
+                <td>Isi tabel baris 2</td>
+                <td>Isi tabel baris 2</td>
+                <td>Isi tabel baris 2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+```
+
+maka hasilnya menjadi:
+
+![image8](/html/8.png)
+
+Terlihat berhasil. Namun, apa yang terjadi kalau kita ingin mengubah desain secara besar-besaran untuk file yang terdiri dari ratusan baris atau untuk banyak file sekaligus? Kita bisa menggunakan file CSS. Sebenarnya yang kita tuliskan di atribut style juga merupakan kode CSS. Untuk belajar HTML lebih lanjut, bisa lihat di link: https://www.w3schools.com/html/

@@ -1,0 +1,24 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinux, faPhp } from '@fortawesome/free-brands-svg-icons'
+import Link from 'next/link'
+
+# Bagaimana cara kerja wordpress?
+Nah di sini kita akan membahas sedikit bagaimana cara wordpress bekerja. Kalau ingin langsung ke bagaimana cara membuat wordpress dan mulai membuat website, bisa langsung ke bagian <Link href="/wordpress/introduction">Membuat Wordpress</Link>. Nah di belakang layar wordpress bekerja dengan 4 stack atau susunan teknologi, yaitu Linux, Apache, MySQL, dan PHP. Kalau kita memasang wordpress sendiri dari wordpress.org kita bisa mengganti Linux dan Apache namunt tidak dengan MySQL dan PHP karena itulah pondasi dari wordpress. Mari kita bahas satu per satu.
+
+## Linux
+<br />
+<FontAwesomeIcon icon={faLinux} height={140} color='black' />
+Linux adalah sebuah kernel. Kernel adalah bagian dari sistem operasi yang menghubungkan aplikasi dengan mesin (komputer secara keseluruhan). Kernel linux dipasangkan dengan aplikasi dari GNU sehingga sistem operasi secara keseluruhannya sebenarnya adalah GNU/Linux. Kalau pernah menggunakan sistem operasi Mac dari Apple, mungkin sudah terbiasa dengan cara kerja GNU/Linux yang mana Mac dan Linux memiliki struktur yang mirip. Linux berbeda dengan windows secara struktural dan aplikasi dari windows tidak bisa berjalan di Linux dan begitu pula sebaliknya. Nah kebanyakan server wordpress yang kita temui akan berjalan di atas linux. Kenapa? Karena linux menggunakan sumber daya (penyimpanan, ram) yang lebih sedikit dan juga cepat. Windows server juga cepat, akan tetapi menggunakan sumber daya yang lebih banyak sehingga untuk server kecil seperti web untuk blogging akan lebih merugikan di durasi yang panjang. Linux sendiri memiliki banyak distribusi (distro) untuk dipilih. Distro di windows mungkin seperti bedanya Windows 7 dan Windows 8 dan Windows 10. Selain itu banyak juga aplikasi untuk mendukung server tersedia secara gratis di linux sehingga ini menjadi nilai plus kenapa wordpress kebanyakan dipasang di server linux.
+
+## Apache
+![apache](/apache.svg)
+Apache adalah software untuk melayani web di sistem operasi linux. Apache ini juga aplikasi gratis dan open source seperti linux sendiri, sehingga setiap orang bebas untuk menggunakan Apache. Di linux setiap komputer didesain untuk digunakan oleh beberapa pengguna, namun untuk berbagi file dan web tidak didukung secara default. Kita perlu menggunakan aplikasi untuk membuka dan memberikan layanan itu agar bisa menjalankan server web sendiri dengan mudah. Apache dirilis pertama kali pada tahun 1995 hanya 4 tahun setelah web server pertama ada. Ini menjadikan Apache cukup “dewasa” dalam pengembangannya dan sudah dipercaya selama puluhan tahun. Meskipun kini sudah banyak pesaing web server seperti Nginx dan LiteSpeed yang lebih baru, server wordpress kebanyakan masih menggunakan Apache sebagai aplikasi servernya.
+
+## MySQL
+![mysql](/mysql.png)
+MySQL adalah aplikasi database yang digunakan oleh wordpress. Apa itu database? Database adalah tempat kita menyimpan semua data kita, misalnya kontak atau postingan blog. Ada beberapa jenis database, salah satunya tipe relasional seperti MySQL. Di database relasional seperti MySQL, database berbentuk seperti tabel-tabel yang memiliki skema (kolom-kolom). Setiap data yang dimasukkan dalam database haruslah sesuai dengan skema yang dipasang. Wordpress juga bisa dipasang dengan database MariaDB karena MariaDB merupakan pecahan dari MySQL dan memberikan beberapa fitur tambahan, dan MariaDB dibuat dengan syntax (aturan penulisan program) yang sama dengan MySQL. Jika tertarik untuk mempelajari MySQL lebih jauh bisa klik link https://www.w3schools.com/mysql/
+
+## PHP
+<br />
+<FontAwesomeIcon icon={faPhp} width={140} color='purple' />
+PHP adalah bahasa pemrograman yang dibuat khusus untuk pemrograman backend server. Dari web dokumentasi PHP, PHP bahkan bisa digunakan untuk membuat aplikasi desktop meskipun sulit. Wordpress sendiri dibangun di atas PHP. PHP menguasai aplikasi web di seluruh dunia. Sekitar 75% dari web di seluruh dunia dibuat di atas PHP, dan wordpress sendiri sudah mengisi 34% dari seluruh web itu sendiri. Mengetahui bagaimana PHP bekerja bisa menjamin pekerjaan sebagai web developer, meskipun dalam menggunakan wordpress kita tidak perlu mengetahui PHP. Seluruh kode program sudah diatur oleh wordpress dan kita hanya perlu mengatur tampilan dan isi web kita. Akan tetapi jika tertarik belajar PHP bisa mulai dari https://www.w3schools.com/php/

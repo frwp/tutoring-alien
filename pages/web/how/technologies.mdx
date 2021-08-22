@@ -1,0 +1,23 @@
+import Image from 'next/image';
+import Bleed from 'nextra-theme-docs/bleed'
+
+# Bagaimana Cara Web Bekerja?
+## Client - Server
+Pertama, kita mengakses internet dengan menggunakan browser. Browser memungkinkan kita membuka dokumen yang dipasang oleh orang lain di internet. Kita bisa anggap browser adalah klien (client) dan komputer yang mengirimkan kita halaman google disebut server. Server juga merupakan komputer yang mirip dengan yang ada di rumah-rumah. Setiap komputer bisa menjadi server, akan tetapi biasanya merupakan komputer yang khusus dibuat untuk menjadi server. Komputer ini biasanya memiliki ukuran besar dan kemampuan untuk menerima permintaan dan memproses serta mengirimkan dokumen ke browser-browser di seluruh dunia.
+
+## Protokol HTTP
+Browser atau klien hanya memperbolehkan kita sebagai pengguna untuk mengakses internet dengan salah satu protokol yang digunakan oleh komputer untuk berkomunikasi. Aduuh apa lagi inii? Kita bisa lihat di gambar di bawah ini:
+
+<Bleed>
+  ![image1](/tech1.jpg)
+</Bleed>
+
+Browser dalam komputer kita menghubungi server di internet, mengirimkan permintaan dalam bentuk HTTP Request. Bisa dibayangkan protokol itu seperti cara kita berkomunikasi. Kalau kita mengirim pesan lewat whatsapp, dan orang tersebut membalas melalui whatsapp juga, bisa dibilang kita sedang berkomunikasi dengan protokol whatsapp :) Kalau kita mengirim pesan lewat pesan whatsapp dan orang itu membalas melalui dm instagram, kita akan bingung orang ini dihubungi lewat mana ‘balesnya’ lewat mana. Begitu juga dalam internet, ada banyak sekali protokol tetapi yang akan kita bahas hanya pengenalan HTTP saja. Saat kita mengirimkan HTTP request kepada server melalui browser, server akan mengirimkan kembali dokumen yang kita minta. Kalau dokumen yang diminta ada, server akan mengirimkan dokumennya. Kalau dokumennya tidak ada, server juga memberi tahu bahwa yang diminta tidak ada, jadi komunikasi cepat berakhir.
+
+## Frontend - Backend
+Nah setelah mengetahui protokol HTTP, kita akan membahas bagaimana server bisa memberikan kita dokumen. Kalau protokol HTTP adalah aturannya, internet adalah jalannya, backend dan frontend sedikit berbeda. Backend bisa dibayangkan seperti sebuah komputer tanpa layar, keyboard dan mouse. Tentu komputer bisa dinyalakan dan berjalan, akan tetapi kita tidak bisa memakainya. Di sisi lain, frontend adalah layar, keyboard dan mouse dari sebuah web. Kita bisa berinteraksi dengan keyboard dan mouse dan layar monitor, akan tetapi tidak terlalu berguna tanpa mesin komputernya. Keduanya saling melengkapi fungsi satu sama lain. 
+<Bleed>
+  ![front-back-end](/tech2.png)
+</Bleed>
+
+Frontend adalah tampilan di layar saat kita mengakses web di browser, sedangkan backend adalah kode yang memproses permintaan dari browser kita dan mengirimkan tampilan frontend yang sesuai kepada browser kita. Sederhananya, frontend merupakan tulisan dan tombol yang kita lihat sewaktu browsing, sedangkan backend yang menentukan saat tombol itu diklik akan terjadi apa di server. Nah, kita sudah mengetahui beberapa istilah seperti klien, server, HTTP, frontend dan backend. Kita sekarang akan fokus ke frontend dahulu.

@@ -1,0 +1,21 @@
+# JavaScript
+
+Terkadang kita menginginkan HTML kita lebih hidup agar kita bisa berinteraksi dengannya. Misalnya kita ingin membuat animasi transisi atau tombol untuk otomatis scroll halaman ke paling atas. Kita bisa melakukannya dengan bahasa pemrograman JavaScript. JavaScript atau yang disingkat JS adalah bahasa pemrograman scripting yang digunakan untuk memanipulasi dokumen html. JS bisa digunakan untuk misalnya kita ingin menampilkan tanggal setelah menekan tombol.
+
+![js-intro](/js/1.png)
+
+Dengan menggunakan JS, kita bisa menambah elemen baru pada dokumen html setelah mengklik tombol tertentu. Contoh kode javascript dalam html adalah:
+
+```javascript
+<button onclick="scrollToTop()">
+  Click to scroll to top
+</button>
+<script>
+  function scrollToTop() {
+    window.scrollTo(0, 0);
+  }
+</script>
+```
+
+Kode JS diletakkan dalam elemen `<script>` di html, kemudian fungsi tersebut dipanggil dari tombol yang ada di html saat tombol tersebut diklik, terlihat dari `<button onClick=”scrollToTop()”>` di mana `scrollToTop()` dituliskan di dalam elemen `<script>`.
+Untuk belajar JavaScript lebih jauh, bisa membaca dari sini: https://www.w3schools.com/js/default.asp
