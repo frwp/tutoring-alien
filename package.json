@@ -13,7 +13,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
-    "next": "11.1.0",
+    "next": "12.1.0",
     "nextra": "^1.1.0",
     "nextra-theme-docs": "^1.2.2",
     "react": "^16.13.1",
